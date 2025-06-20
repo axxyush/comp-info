@@ -6,7 +6,7 @@ function Home() {
   const [searchResult, setSearchResult] = useState(null);
   const [deleteSerial, setDeleteSerial] = useState("");
 
-  const API_BASE = "http://localhost:3001";
+  const API_BASE = "https://comp-info.onrender.com";
 
   const handleSearch = async (e) => {
     e.preventDefault();
