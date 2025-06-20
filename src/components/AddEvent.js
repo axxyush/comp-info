@@ -14,7 +14,7 @@ function AddEvent() {
   const [description, setDescription] = useState("");
   const [eventError, setEventError] = useState("");
 
-  const API_BASE = "http://localhost:3001";
+  const API_BASE = "https://comp-info.onrender.com";
 
   const handleAddEvent = async (e) => {
     e.preventDefault();
