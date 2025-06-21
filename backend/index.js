@@ -12,6 +12,9 @@ app.use(cors());
 // Postgres pool
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false,
+  },
 });
 
 // Utility: normalize serial (uppercase, trim)
